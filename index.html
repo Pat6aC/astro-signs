@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Astrological signs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="bckgrd" ondblclick="change()">
+  	<nav>
+    <ul>
+    	<li><a href="#home">Home</a></li>
+        <li><a href="#signs">Signs</a></li>
+        <li><a href="#personalities">Personalities</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+  <form name="zodiac"id="home">
+    <h1>Your Astrological Signs</h1>
+          <div id="reset"><button>Reset</button></div>
+    <div class="grid-container">
+      <div>
+        <h2>Year</h2>
+        <input type="text" size="4" name="year" value="Birth Year" onClick=value="">
+      </div>
+
+    <div>
+      <h2>Month</h2>
+          <select name="month">
+            <option value="x">Select Birth Month</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+            </select>
+    </div>
+
+    <div>
+      <h2>Day</h2>
+      <input type="text" name="date" value="Day" size="3" onClick=value="">
+    </div>
+
+    <div>
+      <h2>Western Sign</h2>
+        <input type="text" name="sign" size="12" value="">
+    </div>
+
+    <div>
+      <h2>Indian Sign</h2>
+        <input type="text" name="isign" size="12" value="">
+    </div>
+
+    <div>
+      <h2>Chinese Sign</h2>
+        <input type="text" name="csign" size="12">
+      </div>
+
+    <div><p>*&nbsp;*&nbsp;*</p></div>
+
+    <div>
+      <input type="button" id="calc-btn" value="Calculate" onClick="signs()">
+    </div>
+    <div><p>*&nbsp;*&nbsp;*</p></div>
+    </div>
+  </form>
+  </div>
+<section>
+  <div class="container" id="signs">
+    <blockquote>Western and Indian signs are rather close to each others about the dates. 
+      <br>Western signs are based upon the annual movement of the Sun in relationship to the Earth.
+      <br>Vedic signs follow the stellar or Sidereal Zodiac, which is the placement of the stars in the Zodiacal constellations of the night sky.
+    </blockquote>
+	  	<div>
+	  		<h2>Western Signs</h2>
+  	  		<h3>Aquarius</h3><p>January 20 to February 18</p>
+  	  		<h3>Pisces</h3><p>February 19 to March 20</p>
+  	  		<h3>Aries</h3><p>March 21 to April 19</p>
+  	  		<h3>Taurus</h3><p>April 20 to May 21</p>
+  	  		<h3>Gemini</h3><p>May 22 to June 21</p>
+  	  		<h3>Cancer</h3><p>June 22 to July 22</p>
+  	  		<h3>Leo</h3><p>July 23 to August 22</p>
+  	  		<h3>Virgo</h3><p>August 23 to September 22</p>
+  	  		<h3>Libra</h3><p>September 23 to October 22</p>
+  	  		<h3>Scorpio</h3><p>October 23 to November 21</p>
+  	  		<h3>Sagittarius</h3><p>November 22 to December 21</p>
+  	  		<h3>Capricorn</h3><p>December 22 to January 19</p>	  			  		
+  		</div>
+  	<div>
+	  		<h2>Indian Signs</h2>
+  	  		<h3>Mesha</h3><p>April 13 to May 14</p>
+  	  		<h3>Vrishba</h3><p>May 15 to June 14</p>
+  	  		<h3>Mithuna</h3><p>June 15 to July 14</p>
+  	  		<h3>Karka</h3><p>July 15 to August 14</p>
+  	  		<h3>Simha</h3><p>August 15 to September 15</p>
+  	  		<h3>Kanyaa</h3><p>September 16 to October 15</p>
+  	  		<h3>Tula</h3><p>October 16 to November 14</p>
+  	  		<h3>Vrischika</h3><p>November 15 to December 14</p>
+  	  		<h3>Dhanu</h3><p>December 15 to January 13</p>
+  	  		<h3>Makara</h3><p>January 14 to February 12</p>
+          <h3>Kumbha</h3><p>February 13 to March 12</p>
+          <h3>Meena</h3><p>March 13 to April 12</p>
+	  	</div>
+        <blockquote>Chinese signs are truly different.
+           <br />To calculate your Chinese zodiac sign, use your year of birth, divide it by 12. The remainder is the number corresponding to your sign.
+        </blockquote>
+	  	<div>
+	  		<h2>Chinese Signs</h2>
+          <h3>Rat</h3><p>1960, 1972, 1984, 1996, 2008, 2020, 2032</p>
+          <h3>Ox</h3><p>1961, 1973, 1985, 1997, 2009, 2021, 2033</p>
+          <h3>Tiger</h3><p>1962, 1974, 1986, 1998, 2010, 2022, 2034</p>
+          <h3>Rabbit</h3><p>1963, 1975, 1987, 1999, 2011, 2023, 2035</p>
+          <h3>Dragon</h3><p>1964, 1976, 1988, 2000, 2012, 2024, 2036</p>
+          <h3>Snake</h3><p>1965, 1977, 1989, 2001, 2013, 2025, 2037</p>
+          <h3>Horse</h3><p>1966, 1978, 1990, 2002, 2014, 2026, 2038</p>
+          <h3>Goat</h3><p>1967, 1979, 1991, 2003, 2015, 2027, 2039</p>
+          <h3>Monkey</h3><p>1968, 1980, 1992, 2004, 2016, 2028, 2040</p>
+          <h3>Rooster</h3><p>1969, 1981, 1993, 2005, 2017, 2029, 2041</p>
+          <h3>Dog</h3><p>1970, 1982, 1994, 2006, 2018, 2030, 2042</p>
+          <h3>Pig</h3><p>1971, 1983, 1995, 2007, 2019, 2031, 2043</p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container" id="personalities">
+  	<h1>Various Traits</h1>
+    <div>
+    <h2>Western signs</h2>
+    <h3>Aries</h3>
+    <p>A born leader. A fearless and brave mind. Rather free-spirited. Impulsive and assertive nature.</p>
+    <h3>Taurus</h3>
+    <p>Persistent, tenacious and patient. Calm and trustworthy personality. Possibly stubborn.</p>
+    <h3>Gemini</h3>
+    <p>Enthusiasm and friendly nature. Gifted in communication.A flexible mind although superficial.</p>
+    <h3>Cancer</h3>
+    <p>A sensitive person with plenty of compassion. Very organized. Aggressive attitude in certain conditions.</p>
+    <h3>Leo</h3>
+    <p>Ambitious and confident. Generous. A leading and often dominating attitude. </p>
+    <h3>Virgo</h3>
+    <p>Very good problem solver, thanks to a logical and analytical mind. Maybe looking for too much attention.</p>
+    <h3>Libra</h3>
+    <p>Diplomatic attitude and easy-going nature. A taste for harmony and beauty. Indecisive when facing choices.</p>
+    <h3>Scorpio</h3>
+    <p>Passionate and emotional by nature. Resourceful and mentally strong. Vindictive when cheated.</p>
+    <h3>Sagittarius</h3>
+    <p>Open-minded to novelty, curious and even adventurous. Versatile nature also.</p>
+    <h3>Capricorn</h3>
+    <p>Responsible and highly motivated. Patience for reaching goals. A bit too cynical sometimes.</p>
+    <h3>Aquarius</h3>
+    <p>Altruistic and independent. Inventive. Emotional detachment could be interpreted as selfishness.</p>
+    <h3>Pisces</h3>
+    <p>Very creative and intuitive. Kind and compassionate. However not always accessible.</p>
+  </div>
+
+<div>
+  <h2>Vedic signs</h2>
+    <h3>Mesha</h3>
+    <p>Fearless and courageous. Frankness and open-mindedness. Stubborn at times.</p>
+    <h3>Vrishba</h3>
+    <p>Lover of music. Pretty silent. Rather conservative and materialistic.</p>
+    <h3>Mithuna</h3>
+    <p>Changeable, adaptable. Good orator. Fast at work. Short-tempered but easily cooled down.</p>
+    <h3>Karka</h3>
+    <p>Mostly introvert. Sensitive, sympathetic. Ambitious, autocratic and strong-willed.</p>
+    <h3>Simha</h3>
+    <p>Bright, courageous, ambitious, proud. Easily relating to all kind of people. At times ill-tempered.</p>
+    <h3>Kanyaa</h3>
+    <p>Sensitive, shy. Practical and observant. Able to fix and adapt. Maybe to much orderliness.</p> 
+    <h3>Tula</h3>
+    <p>Easily mixing with people. Imaginative and entertaining. A tendency to procrastinate.</p>
+    <h3>Vrischika</h3>
+    <p>Honest, sincere, trustworthy. Courageous and self-confident. Determined to face challenges head-on.</p>
+    <h3>Dhanu</h3>
+    <p>Truthful and generous. Loyal but independent. Impulsiveness is the greatest weakness.</p>
+    <h3>Makara</h3>
+    <p>A practical goal-oriented mindset. Confident with a taste for challenges. Too interested with gain at times.</p>
+    <h3>Kumbha</h3>
+    <p>Emotional, intuitive and imaginative. Human and compassionate. Social is more important than personal.</p>
+    <h3>Meena</h3>
+    <p>Courageous and timid. Popular, easygoing nature and tolerant. Emotional rather than rational.</p>
+  </div>
+
+<div>
+  <h2>Chinese signs</h2>
+    <h3>Rat</h3>
+    <p>Ambitious, charming, talkative, resourceful, private, frugal, critical.</p>
+    <h3>Ox</h3>
+    <p>Diligent, gentle, hardworking, reliable, patient, materialistic, stubborn.</p>
+    <h3>Tiger</h3>
+    <p>Confident, brave, magnetic, idealistic, thrill-seeking, arrogant, selfish.</p>
+    <h3>Rabbit</h3>
+    <p>Kind, sensitive, artistic, romantic, judgmental, timid, refined.</p>
+    <h3>Dragon</h3>
+    <p>Outspoken, energetic, generous, intelligent, perfectionistic, egocentric, impatient.</p>
+    <h3>Snake</h3>
+    <p>Clever, curious, alluring, wise, anxious, calculating, jealous.</p>
+    <h3>Horse</h3>
+    <p>Amusing, enthusiastic, independent, persuasive, irresponsible, moody, opportunistic.</p>
+    <h3>Goat</h3>
+    <p>Easygoing, empathetic, creative, cheerful, disorganized, impulsive lazy.</p>
+    <h3>Monkey</h3>
+    <p>Entertaining, intelligent, optimistic, sociable, fickle, secretive, unpredictable.</p>
+    <h3>Rooster</h3>
+    <p>Adventurous, charitable, funny, loyal, argumentative, boastful, self-involved.</p>
+    <h3>Dog</h3>
+    <p>Helpful, honest, trustworthy, unselfish, pessimistic, anxious, timid.</p>
+    <h3>Pig</h3>
+    <p>Caring, generous, smart, outgoing, fearful, impatient, materialistic.</p>
+  </div>
+  </div>
+</section>
+<section>
+    <div class="container" id="contact">
+      <div>
+        <h2>Contact us</h2>
+        <fieldset>
+          <form id="contact-us"method="post" action="">
+          <label for="lastname">Lastname&nbsp;*</label>
+            <input type="text" name="lastname" placeholder="Your lastname" required onClick=value=""><br>
+
+          <label for="firstname">Firstname&nbsp;*</label>
+            <input type="text" name="firstname" placeholder="Your firstname" required onClick=value=""><br>
+
+          <label for="email">Email&nbsp;*</label>
+            <input type="email" name="email" placeholder="Your Email" required onClick=value=""><br>
+
+          <label for="phone">Phone number&nbsp;*</label>
+            <input type="tel" pattern="^[0-9]{10}$" name="phone"  maxlength="12" placeholder="Your Phone number" required onClick=value=""><br>
+
+          <label for="birthdate">Your birthdate</label>
+            <input type="date" name="birthdate">
+            <br>
+            <label for="comments">Your comments</label>
+          <textarea id="comments" name="comments" rows="10" cols="40"></textarea>
+        <span>
+          <button type="submit" id ="sign-in" name="submit">Submit</button>
+        </span>
+        </form>
+      </fieldset>
+      </div>
+    <div>
+      <blockquote>Fill any form if you are interested and want to join us and / or receive our monthly newsletter.
+      <br>
+      Be careful, clicking in the fields once filled resets them.</blockquote>
+    </div>
+    <div>
+      <h2>Newsletter subscription</h2>
+        <fieldset>
+         <form id="contact-us"method="post" action="">
+          <label for="lastname">Lastname&nbsp;*</label>
+            <input type="text" name="lastname" placeholder="Your lastname" required onClick=value=""><br>
+
+          <label for="firstname">Firstname&nbsp;*</label>
+            <input type="text" name="firstname" placeholder="Your firstname" required onClick=value=""><br>
+
+          <label for="email">Email&nbsp;*</label>
+            <input type="email" name="email" placeholder="Your Email" required onClick=value=""><br>
+
+          <label for="phone">Phone number&nbsp;*</label>
+            <input type="tel" pattern="^[0-9]{10}$" name="phone" maxlength="12" placeholder="Your Phone number" required onClick=value=""><br>
+
+          <label for="birthdate">Your birthdate</label>
+            <input type="date" name="birthdate">
+            <br>
+        <span>
+          <button type="submit" id ="sign-in" name="submit">Submit</button>
+        </span>
+      </form>
+    </fieldset>
+    </div>
+  </div>
+</section>
+  <script src="script.js"></script>
+   </body>
+</html>
