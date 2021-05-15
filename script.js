@@ -1,10 +1,10 @@
- function change(){
+    function change(){
       var container = document.getElementById("bckgrd");
       container.classList.toggle("darker");
     }
 
-      function signs() {
-      var start = 1901, birthyear = document.zodiac.year.value, date=document.zodiac.date.value, month=document.zodiac.month.selectedIndex;
+    function signs() {
+      const start = 1901, birthyear = document.zodiac.year.value, date=document.zodiac.date.value, month=document.zodiac.month.selectedIndex;
 
       with (document.zodiac.sign){
       if (month == 1 && date >=20 || month == 2 && date <=18) {value = "Aquarius";}
@@ -38,17 +38,17 @@
 
       x = (start - birthyear) % 12
       with (document.zodiac.csign){
-      if (x == 0) {value = "Ox";}
       if (x == 1 || x == -11) {value = "Rat";}
-      if (x == 2 || x == -10) {value = "Pig";}
-      if (x == 3 || x == -9)  {value = "Dog";}
-      if (x == 4 || x == -8)  {value = "Rooster";}
-      if (x == 5 || x == -7)  {value = "Monkey";}
-      if (x == 6 || x == -6)  {value = "Goat";}
-      if (x == 7 || x == -5)  {value = "Horse";}
-      if (x == 8 || x == -4)  {value = "Snake";}
-      if (x == 9 || x == -3)  {value = "Dragon";}
-      if (x == 10 || x == -2) {value = "Cat";}
+      if (x == 0) {value = "Ox";}
       if (x == 11 || x == -1) {value = "Tiger";}
-      }
-      }
+      if (x == 10 || x == -2) {value = "Rabbit";}
+      if (x == 9 || x == -3)  {value = "Dragon";}
+      if (x == 8 || x == -4)  {value = "Snake";}
+      if (x == 7 || x == -5)  {value = "Horse";}
+      if (x == 6 || x == -6)  {value = "Goat";}
+      if (x == 5 || x == -7)  {value = "Monkey";}
+      if (x == 4 || x == -8)  {value = "Rooster";}
+      if (x == 3 || x == -9)  {value = "Dog";}
+      if (x == 2 || x == -10) {value = "Pig";}
+    }
+  }
