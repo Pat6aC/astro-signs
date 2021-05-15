@@ -57,7 +57,7 @@ h2 {
 }
 
 h3 {
-  margin-top: 0.4rem;
+  margin-top: 0.8rem;
 }
 
 blockquote {
@@ -120,18 +120,19 @@ select, input[type="text"], [type="button"], [type="email"],
   min-height: 100vh;
   }
 
-#bckgrd.darker{
+#bckgrd.darker {
   background-image: url(images/milkyway.jpg);
   }
 
-#signs, #personalities, #contact{
+#signs, #personalities, #contact {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   min-height: 100vh;
   }
 
-#signs{
+#signs {
   background-image: linear-gradient(145deg, #303c52, #1a1d46, #0e3a74);
+  line-height: 1.2rem;
   }
 
 #signs, #personalities p {
@@ -154,8 +155,4 @@ select, input[type="text"], [type="button"], [type="email"],
   flex-direction: column;
   margin: 2rem;
   line-height: 4rem;
-}
-
-#comments {
-
 }
